@@ -36,7 +36,7 @@ export function SalaryForm({ getSalary }) {
     <div>
       {isShownForm && (
         <div className="container">
-          <h1 className="col-sm-12 col-md-8 col-lg-8 titulo-formulario">Ingresá tu salario neto y descubrí en qué parte de la pirámide de ingresos estás</h1>
+          <h1 className="col-sm-12 col-md-8 col-lg-8 titulo-formulario">Ingresá tu salario neto y descubrí en qué parte de la pirámide de social estás</h1>
         <form className="col-sm-12 col-md-8 col-lg-8" onSubmit={onSubmit}>
           <label htmlFor="salary"></label>
           <input
@@ -84,6 +84,7 @@ export function SalaryForm({ getSalary }) {
             }
           />
           <div>
+            <p>Fuente: Consultora W sobre la base de datos EPH - Nivel socioecoómico SAIMO/CIEM - Martín Rozada</p>
             <button className="btn btn-success" onClick={handleReset}>
               Calcular de nuevo
             </button>

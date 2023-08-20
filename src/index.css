@@ -17,7 +17,7 @@ h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
-  padding-bottom: 20px;
+  padding-bottom: 35px;
 }
 
 label {
@@ -37,6 +37,13 @@ span {
 img {
   max-width: 100vw;
   max-height: 100vh;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  padding-top: 15px;
 }
 
 button {
