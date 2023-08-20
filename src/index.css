@@ -6,6 +6,20 @@ body {
   min-height: 100vh;
 }
 
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  padding-bottom: 15px;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+
 label {
   display: block;
 }
@@ -22,9 +36,9 @@ span {
 
 img {
   max-width: 100vw;
-  max-height: 80vh;
+  max-height: 100vh;
 }
 
 button {
-  margin-top: 15px;
+  margin-top: 25px;
 }

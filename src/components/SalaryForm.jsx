@@ -35,11 +35,13 @@ export function SalaryForm({ getSalary }) {
   return (
     <div>
       {isShownForm && (
-        <form onSubmit={onSubmit}>
+        <div className="container">
+          <h1 className="col-sm-12 col-md-8 col-lg-8 titulo-formulario">Ingresá tu salario neto y descubrí en qué parte de la pirámide de ingresos estás</h1>
+        <form className="col-sm-12 col-md-8 col-lg-8" onSubmit={onSubmit}>
           <label htmlFor="salary"></label>
           <input
           className="form-control"
-          placeholder="Ingresá tu salario bruto"
+          placeholder="Ingresá tu salario neto"
             type="text"
             {...register("salary", {
               required: {
@@ -60,10 +62,13 @@ export function SalaryForm({ getSalary }) {
 
           <button className="btn btn-success" type="submit">Calcular</button>
         </form>
+        </div>
       )}
 
       {isShownSalary && (
         <div className="col-12">
+          <h1>La pirámide social de la argentina en el 2023</h1>
+          <h2>El ingreso promedio total del país en hogares es de $340.000 mensuales</h2>
           <img
             className="img-fluid"
             src={
