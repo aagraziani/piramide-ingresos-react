@@ -58,7 +58,7 @@ export function SalaryForm({ getSalary }) {
 
           {errors.salary && <span>{errors.salary.message}</span>}
 
-          <button className="btn btn-success" type="submit">Enviar</button>
+          <button className="btn btn-success" type="submit">Calcular</button>
         </form>
       )}
 
