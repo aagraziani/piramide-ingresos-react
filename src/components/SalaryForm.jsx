@@ -72,19 +72,19 @@ export function SalaryForm({ getSalary }) {
           <img
             className="img-fluid"
             src={
-              watch("salary") < 90000
+              watch("salary") < 191000
                 ? images[0].picture
-                : watch("salary") > 90001 && watch("salary") < 119999
+                : watch("salary") > 190001 && watch("salary") < 249999
                 ? images[1].picture
-                : watch("salary") > 120000 && watch("salary") < 249999
-                ? images[2].picture
                 : watch("salary") > 250000 && watch("salary") < 449999
+                ? images[2].picture
+                : watch("salary") > 450000 && watch("salary") < 899999
                 ? images[3].picture
                 : images[4].picture
             }
           />
           <div>
-            <p>Fuente: Consultora W sobre la base de datos EPH - Nivel socioecoómico SAIMO/CIEM - Martín Rozada</p>
+            <p>Fuente: Consultora W sobre la base de datos EPH - Nivel socioecoómico SAIMO/CIEM - Martín</p>
             <button className="btn btn-success" onClick={handleReset}>
               Calcular de nuevo
             </button>
